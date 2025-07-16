@@ -7,8 +7,7 @@ import tempfile
 from dotenv import load_dotenv
 import os
 
-load_dotenv()
-token = os.getenv("HF_TOKEN") or st.secrets.get("HF_TOKEN")
+st.secrets.get("HF_TOKEN")
 
 print(token)
 # Initialize Gradio client
