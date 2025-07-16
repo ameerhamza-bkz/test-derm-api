@@ -4,9 +4,15 @@ from PIL import Image
 import requests
 from io import BytesIO
 import tempfile
+from dotenv import load_dotenv
+import os
 
+load_dotenv()
+token = os.getenv("HF_TOKEN")
+
+print(token)
 # Initialize Gradio client
-client = Client("ameerhmz/derm-foundation")
+client = Client("ameerhmz/derm-foundation", hf_token = token)
 
 st.title("Skin Condition Predictor")
 
