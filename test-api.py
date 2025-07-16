@@ -6,9 +6,8 @@ from io import BytesIO
 import tempfile
 import os
 
-st.secrets.get("HF_TOKEN")
+token = st.secrets.get("HF_TOKEN")
 
-print(token)
 # Initialize Gradio client
 client = Client("ameerhmz/derm-foundation", hf_token = token)
 
