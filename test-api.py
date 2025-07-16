@@ -4,7 +4,6 @@ from PIL import Image
 import requests
 from io import BytesIO
 import tempfile
-from dotenv import load_dotenv
 import os
 
 st.secrets.get("HF_TOKEN")
